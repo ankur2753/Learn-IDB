@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Pangolin&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  --chalk-font: "Pangolin", cursive;
+  --Sans-font: "Open Sans", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  transition: all 0.5s linear;
+}
+.logo {
+  font-family: var(--chalk-font);
+  font-size: x-large;
+  color: white;
+}
+@media screen and (max-width: 500px) {
+  .nav-buttons {
+    display: none;
+    transition: display 0.3s ease;
+  }
+  .nav-buttons.active {
+    display: flex;
+  }
+}
