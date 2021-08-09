@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Pangolin&display=swap");
+* {
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --chalk-font: "Pangolin", cursive;
+  --Sans-font: "Open Sans", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  transition: all 0.5s linear;
+}
+.logo {
+  font-family: var(--chalk-font);
+  font-size: x-large;
+  color: white;
+}
+@media screen and (max-width: 500px) {
+  .nav-buttons {
+    display: none;
+    transition: display 0.3s ease;
+  }
+  .nav-buttons.active {
+    display: flex;
+  }
 }

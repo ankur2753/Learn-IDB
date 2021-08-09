@@ -1,18 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Flex } from "@chakra-ui/layout";
+import { Box } from "@chakra-ui/layout";
 const Section = ({ children }) => {
   return (
-    <Flex
-      height='90vh'
-      width='100vw'
-      direction={{ sm: "column", md: "column-reverse", lg: "row" }}
+    <Box
+      width='100%'
+      display="grid"
       m={0}
+      gridGap="20px"
       p={0}
-      justifyContent='normal'
+      justifyContent='space-between'
       gridAutoFlow={{ sm: "row", md: "row", lg: "column" }}>
       {children}
-    </Flex>
+    </Box>
   );
 };
 Section.propTypes = {
