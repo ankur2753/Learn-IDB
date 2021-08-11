@@ -99,6 +99,12 @@ export default function Home() {
                     previous requests/ transactions/connections open on db first.
                 </TextSection>
             </Section>
+            <TextSection>
+                That' all for the basics of IDB, for more i would suggest heading to the docs.Here's a link to the
+                same <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase">MDN-IndexDB</a>.
+                <br/>
+                Or you can head to Try-it section.
+            </TextSection>
         </Box>
     );
 }

@@ -36,11 +36,11 @@ export var NavBar = () => {
                 <Button variant='outline' mr={3}>
                     <Link to="/">Home</Link>
                 </Button>
-                <Button variant='outline' mr={3}>
-                    <Link to="/try">
+                <Link to="/try">
+                    <Button variant='outline' mr={3}>
                         Try-it
-                    </Link>
-                </Button>
+                    </Button>
+                </Link>
                 <Button variant='outline' mr={3} onClick={toggleColorMode}>
                     {colorMode === "light" ? "Dark" : "Light"} Mode
                 </Button>
@@ -56,9 +56,11 @@ export var NavBar = () => {
                     />
                     <MenuList sx={{"@media screen and (max-width:600px)": {width: "100vh"}}} w="50vw">
                         <MenuItem><Link to="/">Home</Link></MenuItem>
-                        <MenuItem> <Link to="/try">
-                            Try-it
-                        </Link></MenuItem>
+                        <Link to="/try">
+                            <MenuItem>
+                                Try-it
+                            </MenuItem>
+                        </Link>
                         <MenuItem onClick={toggleColorMode}>
                             {colorMode === "light" ? "Dark" : "Light"} Mode
                         </MenuItem>

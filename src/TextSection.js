@@ -5,9 +5,10 @@ import {PropTypes} from "prop-types";
 function TextSection({heading, children, color,align="left", pos="start"}) {
     return (
         <Box
-            width={{sm: "100%", md: "100%", lg: "70%"}}
+            width={{sm: "100%", md: "100%", lg: "100%"}}
             height={{sm: "50%", md: "50%", lg: "100%"}}
             p='10'
+            m={4}
             bgColor={color}
             placeSelf={pos}
             alignItems='center'
@@ -15,7 +16,7 @@ function TextSection({heading, children, color,align="left", pos="start"}) {
             <Heading
                 textAlign={align}
                 width='100%'
-                borderBottom='1px solid black'
+                borderBottom='1px solid'
                 mb={3}>
                 {heading}
             </Heading>
