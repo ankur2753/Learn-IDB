@@ -10,8 +10,8 @@ const App = () => {
         <ChakraProvider>
             <BrowserRouter>
                 <Switch>
-                    <Route path="/try" exact component={TryIt}/>
-                    <Route path="/" component={Home}/>
+                    <Route path="/learn-idb/try" exact component={TryIt}/>
+                    <Route exact path="/learn-idb" component={Home}/>
                 </Switch>
             </BrowserRouter>
         </ChakraProvider>

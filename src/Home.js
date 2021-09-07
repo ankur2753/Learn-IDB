@@ -1,5 +1,6 @@
 import React from "react";
-import {Box, Flex} from "@chakra-ui/react";
+import {Box, Flex, Link} from "@chakra-ui/react";
+import {ExternalLinkIcon} from "@chakra-ui/icons"
 import {NavBar} from "./NavBar";
 import TextSection from "./TextSection";
 import Section from "./Section";
@@ -99,9 +100,12 @@ export default function Home() {
                     previous requests/ transactions/connections open on db first.
                 </TextSection>
             </Section>
-            <TextSection>
+            <TextSection align="center">
                 That' all for the basics of IDB, for more i would suggest heading to the docs.Here's a link to the
-                same <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase">MDN-IndexDB</a>.
+                same <Link isExternal color="purple.500"
+                           href="https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase">
+                <ExternalLinkIcon/> MDN-IndexDB
+            </Link>.
                 <br/>
                 Or you can head to Try-it section.
             </TextSection>

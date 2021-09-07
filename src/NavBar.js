@@ -33,10 +33,12 @@ export var NavBar = () => {
             </Box>
             <Box m={5} sx={{"@media screen and (max-width:600px)": {display: "none"}}}
                  display={{sm: "none", md: "none", lg: "block"}}>
-                <Button variant='outline' mr={3}>
-                    <Link to="/">Home</Link>
-                </Button>
-                <Link to="/try">
+                <Link to="/learn-idb">
+                    <Button variant='outline' mr={3}>
+                        Home
+                    </Button>
+                </Link>
+                <Link to="/learn-idb/try">
                     <Button variant='outline' mr={3}>
                         Try-it
                     </Button>
@@ -55,8 +57,12 @@ export var NavBar = () => {
                         variant='outline'
                     />
                     <MenuList sx={{"@media screen and (max-width:600px)": {width: "100vh"}}} w="50vw">
-                        <MenuItem><Link to="/">Home</Link></MenuItem>
-                        <Link to="/try">
+                        <Link to="/learn-idb">
+                            <MenuItem>
+                                Home
+                            </MenuItem>
+                        </Link>
+                        <Link to="/learn-idb/try">
                             <MenuItem>
                                 Try-it
                             </MenuItem>
