@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/learn-idb/static/css/main.5bb732a4.chunk.css",
-    "main.js": "/learn-idb/static/js/main.f6e5b94e.chunk.js",
-    "main.js.map": "/learn-idb/static/js/main.f6e5b94e.chunk.js.map",
+    "main.js": "/learn-idb/static/js/main.6bae80d4.chunk.js",
+    "main.js.map": "/learn-idb/static/js/main.6bae80d4.chunk.js.map",
     "runtime-main.js": "/learn-idb/static/js/runtime-main.1de97c33.js",
     "runtime-main.js.map": "/learn-idb/static/js/runtime-main.1de97c33.js.map",
-    "static/js/2.f12f6025.chunk.js": "/learn-idb/static/js/2.f12f6025.chunk.js",
-    "static/js/2.f12f6025.chunk.js.map": "/learn-idb/static/js/2.f12f6025.chunk.js.map",
+    "static/js/2.3b24828b.chunk.js": "/learn-idb/static/js/2.3b24828b.chunk.js",
+    "static/js/2.3b24828b.chunk.js.map": "/learn-idb/static/js/2.3b24828b.chunk.js.map",
     "index.html": "/learn-idb/index.html",
     "static/css/main.5bb732a4.chunk.css.map": "/learn-idb/static/css/main.5bb732a4.chunk.css.map",
-    "static/js/2.f12f6025.chunk.js.LICENSE.txt": "/learn-idb/static/js/2.f12f6025.chunk.js.LICENSE.txt"
+    "static/js/2.3b24828b.chunk.js.LICENSE.txt": "/learn-idb/static/js/2.3b24828b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1de97c33.js",
-    "static/js/2.f12f6025.chunk.js",
+    "static/js/2.3b24828b.chunk.js",
     "static/css/main.5bb732a4.chunk.css",
-    "static/js/main.f6e5b94e.chunk.js"
+    "static/js/main.6bae80d4.chunk.js"
   ]
 }
