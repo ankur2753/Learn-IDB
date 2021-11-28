@@ -159,6 +159,10 @@ function deleteShip(dbName) {
     indexedDB.deleteDatabase(dbName);
 }
 
+async function getListOfShips() {
+    return await indexedDB.databases() || [];
+}
+
 export {
     createShip,
     deleteShip,
@@ -169,4 +173,5 @@ export {
     updateList,
     getListContent,
     getContainerNames,
+    getListOfShips,
 };

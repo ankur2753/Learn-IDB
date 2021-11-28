@@ -19,20 +19,21 @@ export var NavBar = () => {
     return (
         <Flex
             position='sticky'
-            width='100%'
+            minW={"100vh"}
+            zIndex={10}
             bgGradient={bg}
             p={6}
             m={0}
-            height={{sm: "s", md: "28"}}
+            height={{md: "28"}}
             top={0}
             justifyContent='space-between'
-            direction={{sm: "row-reverse", md: "row-reverse", lg: "row"}}
+            direction={{md: "row-reverse", lg: "row"}}
             as='nav'>
             <Box className='logo' m={5}>
                 Learn indexDB
             </Box>
             <Box m={5} sx={{"@media screen and (max-width:600px)": {display: "none"}}}
-                 display={{sm: "none", md: "none", lg: "block"}}>
+                 display={{md: "none", lg: "block"}}>
                 <Link to="/learn-idb">
                     <Button variant='outline' mr={3}>
                         Home
@@ -54,20 +55,21 @@ export var NavBar = () => {
                         as={IconButton}
                         aria-label='Options'
                         icon={<HamburgerIcon/>}
-                        variant='outline'
+                        variant="solid"
                     />
-                    <MenuList sx={{"@media screen and (max-width:600px)": {width: "100vh"}}} w="50vw">
+                    <MenuList fontSize={"1.2rem"} sx={{"@media screen and (max-width:600px)": {width: "90vh"}}}
+                              w="50vw">
                         <Link to="/learn-idb">
-                            <MenuItem>
+                            <MenuItem alignItems={"right"} p={5}>
                                 Home
                             </MenuItem>
                         </Link>
                         <Link to="/learn-idb/try">
-                            <MenuItem>
+                            <MenuItem p={5}>
                                 Try-it
                             </MenuItem>
                         </Link>
-                        <MenuItem onClick={toggleColorMode}>
+                        <MenuItem p={5} onClick={toggleColorMode}>
                             {colorMode === "light" ? "Dark" : "Light"} Mode
                         </MenuItem>
                     </MenuList>

@@ -3,13 +3,15 @@ import {Box} from "@chakra-ui/react";
 import Section from "./Section";
 import TextSection from "./TextSection";
 import {NavBar} from "./NavBar";
-import InpForm from "./InpForm";
+import {CrudOperations} from "./CrudOperations";
+import {DataBaseVisualization} from "./DataBaseVisualization";
+
 
 export default function TryIt() {
     return <Box display="grid" gridAutoFlow="row" width="100vw">
         <NavBar/>
         <Section>
-            <Box m={10} p={10}>Gist Here</Box>
+            <Box m={10} p={10}>Gist Goes Here</Box>
             <TextSection align="left" heading="Creating a DataBase">
                 Let's try making a database for our packages in the cargo ship.
                 <br/> As a Person can have multiple cargo ships, An origin(in a layman's term a website) can have
@@ -18,11 +20,8 @@ export default function TryIt() {
             </TextSection>
         </Section>
         <Section>
-            <InpForm/>
-            <div id="Status">
-
-            </div>
-
+            <DataBaseVisualization/>
+            <CrudOperations/>
         </Section>
     </Box>
 }

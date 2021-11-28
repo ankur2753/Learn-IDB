@@ -2,11 +2,11 @@ import React from "react";
 import {Box, Heading, Text} from "@chakra-ui/react";
 import {PropTypes} from "prop-types";
 
-function TextSection({heading, children, color,align="left", pos="start"}) {
+function TextSection({heading, children, color, align = "left", pos = "start"}) {
     return (
         <Box
-            width={{sm: "100%", md: "100%", lg: "100%"}}
-            height={{sm: "50%", md: "50%", lg: "100%"}}
+            width={{md: "100%", lg: "100%"}}
+            height={{md: "50%", lg: "100%"}}
             p='10'
             m={4}
             bgColor={color}
@@ -24,6 +24,7 @@ function TextSection({heading, children, color,align="left", pos="start"}) {
         </Box>
     );
 }
+
 TextSection.propTypes = {
     heading: PropTypes.string,
     children: PropTypes.node,
